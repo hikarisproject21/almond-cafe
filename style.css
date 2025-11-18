@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
 
+*{
+  box-sizing: border-box;
+     overflow-x: hidden;
+}
 body {
   /* margin: 0; */
     margin: 0;   /* wajib untuk hilangin garis putih pinggir */
@@ -161,14 +165,11 @@ nav a {
 @media(max-width: 900px) {
     .container{
         width: 100vw;
+        padding: 10px;
     }
   .hero {
     flex-direction: column-reverse;
     text-align: center;
-  }
-    .search {
-  display: none;
-}
     
  
   }
@@ -202,7 +203,9 @@ height: 100vh;
   .buttons{
       justify-content: center;
   }
-
+  .navbar{
+    padding: 15px 10px;
+  }
 
 }
 
@@ -584,7 +587,9 @@ height: 100vh;
   .subscribe-section h2 {
     font-size: 22px;
   }
-  
+  .subscribe-section {
+    width: 90%;
+  }
   .subscribe-box {
     width: 90%;
   }
@@ -660,11 +665,12 @@ height: 100vh;
   }
 }
 
-@media(max-width: 600px) {
+@media(max-width: 768px) {
   .footer-container {
     grid-template-columns: 1fr;
     text-align: center;
   }
+
 
   .social-icons i {
     margin: 10px;
