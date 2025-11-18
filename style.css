@@ -165,6 +165,7 @@ nav a {
   .hero {
     flex-direction: column-reverse;
     text-align: center;
+  }
     .search {
   display: none;
 }
